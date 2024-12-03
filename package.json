@@ -1,0 +1,26 @@
+{
+  "name": "electron-bug-demo",
+  "version": "1.0.0",
+  "main": "./dist/electron-root.js",
+  "scripts": {
+    "clean": "rm -rf node_modules package-lock.json dist release-builds",
+    "build": "tsc -p tsconfig.build.json && cp -r ./static dist/",
+    "electron:serve": "electron dist/electron-root.js --serve",
+    "electron:win": "electron-builder build --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron-log": "^4.4.8"
+  }, 
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/node": "^18.0.3",
+    "electron": "^32.1.2",
+    "electron-builder": "^23.6.0",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}

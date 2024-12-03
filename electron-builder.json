@@ -1,0 +1,20 @@
+{
+    "appId": "electron-bug-demo",
+    "productName": "Electron Bug Demo",
+    "directories": {
+      "output": "release-builds/"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": [
+        { "target": "portable", "arch": ["x64"] }
+      ]
+    },
+    "mac": {
+      "target": [
+        { "target": "dmg", "arch": ["x64", "arm64"] }
+      ]
+    }
+  }
